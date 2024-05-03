@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test'
 test.beforeEach(async ({ page }) => {
   // functionの前に必ず実行される
   // baseUrlのrootへ
-  await page.goto('/station1.html')
+  await page.goto('src/station1.html')
   test.setTimeout(5000)
 })
 
