@@ -13,6 +13,9 @@ function buildFullName(data) {
     // Station14の問題はこちらです。想定する答えをここを書いてください。
     // 氏名がわかるようにしつつ、半角スペースで繋いでください。
     // またtest配列のそれぞれのオブジェクトに対して、full_nameのプロパティが追加されるように実装すること
+    const full_name = `${data.family_name} ${data.first_name}`; // 姓と名を半角スペースで繋げる
+    data.full_name = full_name; // full_nameプロパティをオブジェクトに追加
+    return data; // 変更を加えたオブジェクトを返す
 }
 
 // 出力が想定される答え
